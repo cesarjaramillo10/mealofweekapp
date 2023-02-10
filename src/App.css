@@ -1,0 +1,221 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  overflow-y: hidden;
+}
+
+body {
+  background-image: url("./templatee.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.headd {
+  width: 100%;
+  height: 50px;
+  /* background-color: #f1f10e; */
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+h1,
+h3 {
+  font-family: "Patua One", cursive;
+  background: #6ea9a2;
+  background: linear-gradient(to right, #50615f 38%, #5c7d0f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.principal {
+  width: 50%;
+  height: 100vh;
+  /* background-color: #07eec7; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainCardContainer {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(250, 235, 215, 0);
+  border-radius: 10px;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Card {
+  width: 110px;
+  height: 130px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__comida {
+  width: 90%;
+  height: 70%;
+  /* background-color: rgba(72, 163, 241, 0.589); */
+  background-color: #f4d999cc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(114, 112, 105);
+  text-align: center;
+}
+.card__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.delete {
+  color: black;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.delete:hover {
+  color: brown;
+}
+
+.add {
+  color: black;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.add:hover {
+  color: rgb(5, 155, 80);
+}
+/* .imadish{
+  position: fixed;
+  right: 7%;
+  top: 18%;
+  display: inline-block;
+  animation: animacionplato,2s,infinite; 
+} */
+
+.divplato {
+  width: 40%;
+  height: 88%;
+  /* background-color: rgba(255, 0, 0, 0.281); */
+  position: absolute;
+  top: 15%;
+  right: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animacionplato 3s infinite;
+}
+
+.imadish {
+  width: 90%;
+  height: 83%;
+  /* background-color: aliceblue; */
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #797c7c77;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajaform {
+  width: 400px;
+  height: 300px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+textarea {
+  width: 50%;
+  height: 20%;
+}
+
+.exitmodal {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 50px;
+  cursor: pointer;
+}
+
+.addbot {
+  width: 30%;
+  height: 10%;
+  border-radius: 10px;
+  border: solid 1px rgba(255, 255, 255, 0);
+  color: #515353;
+  background-color: #f4d999cc;
+}
+
+@keyframes animacionplato {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 502px) {
+ 
+.divplato{
+  display: none;
+}
+.principal{
+  width:100%;
+  height: 100vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(29,191,217,1) 0%, rgba(198,194,120,1) 80%);
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.mainCardContainer{
+  overflow-y: scroll;
+}
+.mainCardContainer::-webkit-scrollbar {display: none;}
+
+.Card{
+  width: 90%;
+  height: 200px;
+  margin: 12px;
+}
+
+
+}
