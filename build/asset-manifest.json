@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mealofweekapp/build/static/css/main.d758ba07.css",
+    "main.js": "/mealofweekapp/build/static/js/main.c08b4c68.js",
+    "static/media/templatee.png": "/mealofweekapp/build/static/media/templatee.6b766081e8b66b1e0976.png",
+    "static/media/mfodd.png": "/mealofweekapp/build/static/media/mfodd.f025935ecd39387a8f15.png",
+    "static/media/logo.svg": "/mealofweekapp/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/mealofweekapp/build/index.html",
+    "main.d758ba07.css.map": "/mealofweekapp/build/static/css/main.d758ba07.css.map",
+    "main.c08b4c68.js.map": "/mealofweekapp/build/static/js/main.c08b4c68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d758ba07.css",
+    "static/js/main.c08b4c68.js"
+  ]
+}
